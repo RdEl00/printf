@@ -10,4 +10,6 @@ printf is a well known function used in C programming to do formated printing. U
 
 **Output**
 
-If everything is succesful the function returns the number of characteres printed.
+If everything is successful, the function returns the number of characters printed.
+
+
