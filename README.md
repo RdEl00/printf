@@ -1,6 +1,6 @@
 # printf project
 
-![printf](assets/Images/header.svg)
+![printf](assets/images/printf.svg)
 
 **Description**
 
