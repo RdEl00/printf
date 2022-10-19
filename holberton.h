@@ -1,25 +1,28 @@
-#ifndef Holberton_h
-#define Holberton_h
+#ifndef HOLBERTON_H
+#define HOLBERTON_H
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdarg.h>
+#include <string.h>
 #include <unistd.h>
-
-int _printf(const char *format,...);
-int printc(va_list l);
-int _putchar(char c);
-int print_string(va_list s);
 
 /**
  * struct types - specifier structure for printf
- * @p: pointer to characters specifiers
- * @func: function pointer to print functions
+ * @p: pointer to characteres specifiers
+ * @func : function pointer to print fucntions
  */
-
 typedef struct types
 {
-	char *p;
+	char p;
 	int (*func)(va_list);
-}types;
+} print_f;
 
-#endif /*Holberton_h*/
+int _putchar(char c);
+int _printf(const char *format, ...);
+int printc(va_list l);
+int print_string(va_list s);
+int (*cmp_func(const char a))(va_list);
+int print_n(va_list n);
+
+#endif /* Holberton_h */
